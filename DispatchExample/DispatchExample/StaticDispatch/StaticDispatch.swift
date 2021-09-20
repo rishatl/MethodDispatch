@@ -9,36 +9,36 @@ import Foundation
 
 // Example - 1
 
-protocol Pet {}
+protocol SomeProtocol {}
 
-extension Pet {
-    func waitingFood() {
+extension SomeProtocol {
+    func function1() {
         print("Pet is hungry")
     }
 }
 
-class Dog: Pet {
-    func waitingFood() {
+class SomeClass: SomeProtocol {
+    func function1() {
         print("Dog is hungry")
     }
 }
 
 // Example - 2
 
-protocol Fish {
-    func waitingFood()
+protocol Protocol {
+    func function2()
 }
 
-struct Shark: Fish {
-    func waitingFood() {
+struct SomeStruct: Protocol {
+    func function2() {
         print("Shark is hungry")
     }
 }
 
 // Example - 3
 
-struct Animal {
-    func eatFood() {
+struct StructA {
+    func function3() {
         print("Eating")
     }
 }

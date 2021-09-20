@@ -11,23 +11,29 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        feedTheDog()
-        feedTheShark()
-        animalEating()
+        exampleStatic()
+        exampleTable()
     }
 
-    func feedTheDog() {
+    func exampleStatic() {
+        let someClass = SomeClass()
+        someClass.function1()
+
+        let someStruct = SomeStruct()
+        someStruct.function2()
+
+        let structA = StructA()
+        structA.function3()
+    }
+
+    func exampleTable() {
         let dog = Dog()
         dog.waitingFood()
-    }
 
-    func feedTheShark() {
         let shark = Shark()
         shark.waitingFood()
-    }
-    
-    func animalEating() {
-        let animal = Animal()
+
+        let animal: Kat = Kat()
         animal.eatFood()
     }
 }
